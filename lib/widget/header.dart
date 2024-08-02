@@ -27,7 +27,11 @@ class HeaderWidget extends StatelessWidget {
             ],
           ),
           const Spacer(),
-          Image.asset("assets/images/account.png"),
+          GestureDetector(
+              onTap: () {
+                Scaffold.of(context).openDrawer();
+              },
+              child: Image.asset("assets/images/account.png")),
         ],
       ),
     );

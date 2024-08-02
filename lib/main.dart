@@ -1,4 +1,4 @@
-import 'package:doctor_app/home.dart';
+import 'package:doctor_app/view/bottom_nav_bar_view.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -13,7 +13,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // ignore: prefer_const_constructors
-      home: HomeView(),
+      home: BottomNavBarView(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(textTheme: GoogleFonts.poppinsTextTheme()),
     );
